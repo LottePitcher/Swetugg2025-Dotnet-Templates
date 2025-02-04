@@ -60,6 +60,13 @@
       "valueSource": "name",
       "replaces": "PROJECT_NAME_DISPLAY",
       "valueTransform": "pascalCaseToSpaces"
+    },
+    "useDeliveryApi": {
+      "displayName": "Use Delivery API",
+      "description": "If specified, enables the Delivery API in appSettings.json and Program.cs",
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false"
     }
   },
   "forms": {
@@ -68,5 +75,19 @@
       "pattern": "([A-Z][a-z]+)",
       "replacement": "$1 "
     }
-  }
+  },
+  "postActions": [
+    {
+      "condition": "(useDeliveryApi)",
+      "description": "Enable Delivery API in appSettings.json",
+      "actionId": "695A3659-EB40-4FF5-A6A6-C9C4E629FCB0",
+      "args": {
+        "jsonFileName": ".\\appSettings.json",
+        "parentPropertyPath": "Umbraco:CMS:DeliveryApi",
+        "newJsonPropertyName": "Enabled",
+        "newJsonPropertyValue": "true"
+      },
+      "continueOnError": true
+    }
+  ]
 }

@@ -3,6 +3,9 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 builder.CreateUmbracoBuilder()
     .AddBackOffice()
     .AddWebsite()
+#if (useDeliveryApi)
+    .AddDeliveryApi()
+#endif
     .AddComposers()
     .Build();
 
