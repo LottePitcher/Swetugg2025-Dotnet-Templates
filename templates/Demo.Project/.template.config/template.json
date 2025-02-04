@@ -47,6 +47,13 @@
         "fallback": 5001
       },
       "replaces": "44328"
+    },
+    "projectNameKebab": {
+      "type": "derived",
+      "valueSource": "name",
+      "replaces": "PROJECT_NAME_KEBAB",
+      "fileRename": "PROJECT_NAME_KEBAB",
+      "valueTransform": "kebabCase"
     }
   }
 }
