@@ -28,5 +28,25 @@
         }
       ]
     }
-  ]
+  ],
+  "symbols": {
+    "httpPort": {
+      "type": "generated",
+      "generator": "port",
+      "parameters": {
+        "fallback": 5000
+      },
+      "replaces": "5240"
+    },
+    "httpsPort": {
+      "type": "generated",
+      "generator": "port",
+      "parameters": {
+        "low": 44300,
+        "high": 44399,
+        "fallback": 5001
+      },
+      "replaces": "7257"
+    }
+  }
 }
