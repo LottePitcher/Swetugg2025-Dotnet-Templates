@@ -8,5 +8,15 @@
       "type": "item"
     },
     "description": "Demo Github actions for Umbraco Cloud",
-    "classifications": [ "DevOps" ]
+    "classifications": [ "DevOps" ],
+    "symbols": {
+      "pathToWebFolder": {
+        "type": "parameter",
+        "datatype": "string",
+        "displayName": "Relative path to the website from root of solution, e.g. 'src/Umbraco.Site')",
+        "replaces": "PATH_TO_WEB_FOLDER",
+        "defaultValue": "src/Website",
+        "isRequired": true
+      }
+    }
 }

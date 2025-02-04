@@ -15,7 +15,7 @@ on:
         required: true
 
 env:
-  pathToWebsite: "src/Umbraco.Web.UI"
+  pathToWebsite: "PATH_TO_WEB_FOLDER"
 
 jobs:
   doDeployment:
