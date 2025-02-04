@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/dotnetcli.host.json",
+  "symbolInfo": {
+    "includeAddons": {
+      "longName": "include-addons",
+      "shortName": "ia"
+    }
+  }
+}

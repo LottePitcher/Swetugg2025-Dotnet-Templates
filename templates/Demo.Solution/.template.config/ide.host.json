@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/ide.host.json",
+  "order": 0,
+  "icon": "icon.png",
+  "description": {
+    "id": "demosolution",
+    "text": "A full demo solution with multiple projects"
+  },
+  "symbolInfo": [
+    {
+      "id": "includeAddons",
+      "isVisible": true,
+      "defaultValue": "false",
+      "description": {
+        "text": "Include the Addons project and reference in WebApp?"
+      }
+    }
+  ]
+}
