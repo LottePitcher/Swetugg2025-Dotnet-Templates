@@ -53,6 +53,14 @@
       "valueSource": "name",
       "replaces": "SOLUTION_NAME_DISPLAY",
       "valueTransform": "pascalCaseToSpaces"
+    },
+    "currentYear": {
+      "type": "generated",
+      "generator": "now",
+      "replaces": "CURRENT_YEAR",
+      "parameters": {
+        "format": "yyyy"
+      }
     }
   },
   "forms": {
