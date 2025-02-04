@@ -54,6 +54,19 @@
       "replaces": "PROJECT_NAME_KEBAB",
       "fileRename": "PROJECT_NAME_KEBAB",
       "valueTransform": "kebabCase"
+    },
+    "projectNameDisplay": {
+      "type": "derived",
+      "valueSource": "name",
+      "replaces": "PROJECT_NAME_DISPLAY",
+      "valueTransform": "pascalCaseToSpaces"
+    }
+  },
+  "forms": {
+    "pascalCaseToSpaces": {
+      "identifier": "replace",
+      "pattern": "([A-Z][a-z]+)",
+      "replacement": "$1 "
     }
   }
 }
