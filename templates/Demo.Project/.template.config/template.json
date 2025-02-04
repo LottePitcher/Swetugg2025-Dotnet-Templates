@@ -67,6 +67,13 @@
       "type": "parameter",
       "datatype": "bool",
       "defaultValue": "false"
+    },
+    "skipRestore": {
+      "displayName": "Skip restore",
+      "description": "If specified, skips the automatic restore of the project on create.",
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false"
     }
   },
   "forms": {
@@ -76,6 +83,11 @@
       "replacement": "$1 "
     }
   },
+  "primaryOutputs": [
+    {
+      "path": "Demo.Project.csproj"
+    }
+  ],
   "postActions": [
     {
       "condition": "(useDeliveryApi)",
@@ -87,6 +99,17 @@
         "newJsonPropertyName": "Enabled",
         "newJsonPropertyValue": "true"
       },
+      "continueOnError": true
+    },
+    {
+      "condition": "(!skipRestore)",
+      "description": "Restore NuGet packages required by this project.",
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "manualInstructions": [
+        {
+          "text": "Run 'dotnet restore'"
+        }
+      ],
       "continueOnError": true
     }
   ]
