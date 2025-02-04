@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/ide.host.json",
+  "order": 0,
+  "icon": "icon.png",
+  "description": {
+    "id": "demoproject",
+    "text": "A demo Umbraco starter website project"
+  },
+  "symbolInfo": [
+    {
+      "id": "useDeliveryApi",
+      "isVisible": true,
+      "defaultValue": false,
+      "description": {
+        "text": "Enable the Delivery API in appSettings.json and in Program.cs?"
+      }
+    }
+  ]
+}
