@@ -14,5 +14,19 @@
   "preferNameDirectory": true,
   "guids": [
     "72a7639b-3035-4c15-bf13-0e36512a19cb"
+  ],
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [
+            "umbraco/Logs/**",
+            "umbraco/Data/**",
+            ".vs/**",
+            ".idea/**"
+          ]
+        }
+      ]
+    }
   ]
 }
