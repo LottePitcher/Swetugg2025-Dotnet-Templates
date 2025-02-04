@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Demo Corporation",
+  "name": "Demo Umbraco Starter Project",
+  "identity": "Demo.Templates.Project",
+  "shortName": "demoproject",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "description": "Demo starter Umbraco website",
+  "classifications": [ "Web", "Umbraco" ],
+  "sourceName": "Demo.Project",
+  "preferNameDirectory": true
+}
