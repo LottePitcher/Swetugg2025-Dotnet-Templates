@@ -25,6 +25,12 @@
             ".vs/**",
             ".idea/**"
           ]
+        },
+        {
+          "condition": "!includeAddons",
+          "exclude": [
+            "src/Demo.Solution.Addons/**"
+          ]
         }
       ]
     }
@@ -61,6 +67,13 @@
       "parameters": {
         "format": "yyyy"
       }
+    },
+    "includeAddons": {
+      "displayName": "Include Addons Project",
+      "description": "If specified, includes the Addons project and adds a reference to WebApp",
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false"
     }
   },
   "forms": {

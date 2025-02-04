@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!--#if (includeAddons)-->
     <ProjectReference Include="..\Demo.Solution.Addons\Demo.Solution.Addons.csproj" />
+    <!--#endif-->
     <ProjectReference Include="..\Demo.Solution.Core\Demo.Solution.Core.csproj" />
   </ItemGroup>
 

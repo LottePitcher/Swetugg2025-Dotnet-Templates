@@ -14,8 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Solution.WebApp", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Solution.Core", "src\Demo.Solution.Core\Demo.Solution.Core.csproj", "{6F5AE241-018E-4897-A5B7-F133E2C4BA50}"
 EndProject
+#if (includeAddons)
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Solution.Addons", "src\Demo.Solution.Addons\Demo.Solution.Addons.csproj", "{EBD45E78-6ADB-41E8-8939-F01B04EF4DEC}"
 EndProject
+#endif
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,10 +32,12 @@ Global
 		{6F5AE241-018E-4897-A5B7-F133E2C4BA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F5AE241-018E-4897-A5B7-F133E2C4BA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F5AE241-018E-4897-A5B7-F133E2C4BA50}.Release|Any CPU.Build.0 = Release|Any CPU
+#if (includeAddons)
 		{EBD45E78-6ADB-41E8-8939-F01B04EF4DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EBD45E78-6ADB-41E8-8939-F01B04EF4DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBD45E78-6ADB-41E8-8939-F01B04EF4DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBD45E78-6ADB-41E8-8939-F01B04EF4DEC}.Release|Any CPU.Build.0 = Release|Any CPU
+#endif
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
