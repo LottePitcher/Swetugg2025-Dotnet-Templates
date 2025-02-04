@@ -11,5 +11,10 @@
   "description": "Demo web app solution",
   "classifications": [ "Web", "Solution" ],
   "sourceName": "Demo.Solution",
-  "preferNameDirectory": true
+  "preferNameDirectory": true,
+  "guids": [
+     "C6C930A9-5AD8-4FBA-8FEA-6F4333E3B73F",
+     "6F5AE241-018E-4897-A5B7-F133E2C4BA50",
+     "EBD45E78-6ADB-41E8-8939-F01B04EF4DEC"
+  ]
 }
