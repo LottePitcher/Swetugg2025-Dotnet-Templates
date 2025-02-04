@@ -1,1 +1,1 @@
-# Demo Solution
+# SOLUTION_NAME_DISPLAY

@@ -47,6 +47,19 @@
         "fallback": 5001
       },
       "replaces": "7257"
+    },
+    "solutionNameDisplay": {
+      "type": "derived",
+      "valueSource": "name",
+      "replaces": "SOLUTION_NAME_DISPLAY",
+      "valueTransform": "pascalCaseToSpaces"
+    }
+  },
+  "forms": {
+    "pascalCaseToSpaces": {
+      "identifier": "replace",
+      "pattern": "([A-Z][a-z]+)",
+      "replacement": "$1 "
     }
   }
 }
